@@ -94,7 +94,7 @@ def handle_message(message):
         
         # Отправляем запрос в AI
         response = client.chat.completions.create(
-        model="xiaomi/mimo-v2-flash",
+        model="xiaomi/mimo-v2-flash:free",
 
             messages=[
                 {"role": "system", "content": SYSTEM_PROMPT},
